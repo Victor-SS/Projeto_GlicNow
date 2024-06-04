@@ -23,10 +23,7 @@
     
 - Analise de Glicemia: Oferece uma visualização de seu controle glicêmico, utilizando filtros e busca.
     
-    Os dados de glicemia dos usuários são visualizados em gráficos para identificação de alterações em suas glicemias.
-    
-
----
+    Os dados de glicemia dos usuários são visualizados em gráficos para identificação de alterações em suas glicemias.    
 
 ## Banco de Dados!
 
