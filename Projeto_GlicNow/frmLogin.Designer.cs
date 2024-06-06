@@ -110,7 +110,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(15, 118);
+            this.btnCancelar.Location = new System.Drawing.Point(15, 144);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(138, 45);
@@ -121,20 +121,21 @@
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.Transparent;
             this.btnConfirmar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.Location = new System.Drawing.Point(170, 118);
+            this.btnConfirmar.Location = new System.Drawing.Point(170, 144);
             this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(148, 45);
             this.btnConfirmar.TabIndex = 2;
             this.btnConfirmar.Text = "&Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 175);
+            this.ClientSize = new System.Drawing.Size(345, 201);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDadosAcesso);
