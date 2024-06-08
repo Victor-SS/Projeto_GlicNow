@@ -21,5 +21,37 @@ namespace Projeto_GlicNow
         {
             Close();
         }
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string senhaCriptografada = Global.Criptografar(txtSenha.Text);
+                Usuario usuario = new Usuario();
+                usuario.login = txtUsuario.Text;
+                usuario.Consultar();
+                if(usuario.id == 0)
+                {
+                    MessageBox.Show("Usuário e/ou senha invalidos", "Login",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (!usuario.Autenticar(senhaCriptografada))
+                {
+                    MessageBox.Show("Usuário e/ou senha invalidos", "Login",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                MessageBox.Show($"Bem vindo {usuario.nomeCompleto}.", "Login",
+                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Global.IdUsuarioLogado = usuario.id;
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro--> " + ex.Message, "Login",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

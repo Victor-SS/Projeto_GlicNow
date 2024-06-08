@@ -14,9 +14,15 @@ namespace Projeto_GlicNow
         [STAThread]
         static void Main()
         {
+            Global.LerAppConfig();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            frmLogin form = new frmLogin();
+            form.ShowDialog();
+            if(form.DialogResult == DialogResult.OK)
+            {
+                Application.Run(new frmPrincipal());
+            }            
         }
     }
 }
