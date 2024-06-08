@@ -37,6 +37,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
+            this.btnCadastro = new System.Windows.Forms.Button();
             this.grpDadosAcesso.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             this.grpDadosAcesso.Controls.Add(this.txtUsuario);
             this.grpDadosAcesso.Controls.Add(this.lblUsuario);
             this.grpDadosAcesso.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDadosAcesso.ForeColor = System.Drawing.Color.Black;
             this.grpDadosAcesso.Location = new System.Drawing.Point(15, 12);
             this.grpDadosAcesso.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.grpDadosAcesso.Name = "grpDadosAcesso";
@@ -55,11 +57,12 @@
             this.grpDadosAcesso.Size = new System.Drawing.Size(302, 100);
             this.grpDadosAcesso.TabIndex = 0;
             this.grpDadosAcesso.TabStop = false;
-            this.grpDadosAcesso.Text = "Dados de Acesso";
             // 
             // ckbSalvaLogin
             // 
             this.ckbSalvaLogin.AutoSize = true;
+            this.ckbSalvaLogin.Checked = true;
+            this.ckbSalvaLogin.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ckbSalvaLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbSalvaLogin.Location = new System.Drawing.Point(12, 73);
             this.ckbSalvaLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -110,6 +113,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(15, 144);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -133,11 +137,27 @@
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
+            // btnCadastro
+            // 
+            this.btnCadastro.FlatAppearance.BorderSize = 0;
+            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastro.Location = new System.Drawing.Point(15, 115);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(100, 23);
+            this.btnCadastro.TabIndex = 3;
+            this.btnCadastro.Text = "Tem Cadastro?";
+            this.btnCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastro.UseVisualStyleBackColor = true;
+            // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnConfirmar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 201);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CancelButton = this.btnCancelar;
+            this.ClientSize = new System.Drawing.Size(325, 201);
+            this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDadosAcesso);
@@ -165,6 +185,7 @@
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.CheckBox ckbSalvaLogin;
+        private System.Windows.Forms.Button btnCadastro;
     }
 }
 
