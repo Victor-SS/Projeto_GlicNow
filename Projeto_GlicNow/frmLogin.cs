@@ -68,7 +68,13 @@ namespace Projeto_GlicNow
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
-            if()
+            this.Tag = "Cadastro";
+            Close();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.Tag = "";
         }
     }
 }

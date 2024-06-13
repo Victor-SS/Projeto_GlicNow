@@ -17,9 +17,14 @@ namespace Projeto_GlicNow
             Global.LerAppConfig();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmLogin form = new frmLogin();
-            form.ShowDialog();
-            if(form.DialogResult == DialogResult.OK)
+            frmCadastro cadastro = new frmCadastro();
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
+            if (login.Tag.ToString() == "Cadastro")
+            {                
+                cadastro.ShowDialog();
+            }
+            if(login.DialogResult == DialogResult.OK || cadastro.DialogResult== DialogResult.OK)
             {
                 Application.Run(new frmPrincipal());
             }            

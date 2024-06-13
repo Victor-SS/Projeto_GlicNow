@@ -67,7 +67,7 @@
             this.ckbSalvaLogin.Location = new System.Drawing.Point(12, 73);
             this.ckbSalvaLogin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ckbSalvaLogin.Name = "ckbSalvaLogin";
-            this.ckbSalvaLogin.Size = new System.Drawing.Size(186, 32);
+            this.ckbSalvaLogin.Size = new System.Drawing.Size(128, 22);
             this.ckbSalvaLogin.TabIndex = 6;
             this.ckbSalvaLogin.Text = "Salva Login?";
             this.ckbSalvaLogin.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             this.lblSenha.Location = new System.Drawing.Point(8, 49);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(84, 28);
+            this.lblSenha.Size = new System.Drawing.Size(59, 18);
             this.lblSenha.TabIndex = 4;
             this.lblSenha.Text = "Senha";
             // 
@@ -88,7 +88,7 @@
             this.txtSenha.Location = new System.Drawing.Point(97, 49);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(198, 27);
+            this.txtSenha.Size = new System.Drawing.Size(198, 20);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
@@ -97,7 +97,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(97, 18);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(198, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(198, 20);
             this.txtUsuario.TabIndex = 2;
             // 
             // lblUsuario
@@ -107,7 +107,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(8, 18);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(103, 28);
+            this.lblUsuario.Size = new System.Drawing.Size(70, 18);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuário";
             // 
@@ -153,7 +153,7 @@
             // frmLogin
             // 
             this.AcceptButton = this.btnConfirmar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.CancelButton = this.btnCancelar;
@@ -165,12 +165,12 @@
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.grpDadosAcesso.ResumeLayout(false);
             this.grpDadosAcesso.PerformLayout();
             this.ResumeLayout(false);
