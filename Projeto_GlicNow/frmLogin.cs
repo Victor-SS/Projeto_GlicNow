@@ -16,7 +16,19 @@ namespace Projeto_GlicNow
         {
             InitializeComponent();
         }
-
+        private void AbrirForm(Form form)
+        {
+            foreach (Form filho in this.MdiChildren)
+            {
+                if (filho.Name == form.Name)
+                {
+                    filho.Activate();
+                    return;
+                }
+            }
+            form.MdiParent = this;
+            form.Show();
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
@@ -52,6 +64,11 @@ namespace Projeto_GlicNow
                 MessageBox.Show("Erro--> " + ex.Message, "Login",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            if()
         }
     }
 }

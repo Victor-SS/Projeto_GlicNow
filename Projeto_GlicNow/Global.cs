@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Configuration;
+using System.Windows.Forms;
 
 namespace Projeto_GlicNow
 {
@@ -33,5 +34,6 @@ namespace Projeto_GlicNow
             conexao = $"Data Source={servidor};Initial catalog={banco};" +
                 $"Integrated Security=true;";
         }
+       
     }
 }
