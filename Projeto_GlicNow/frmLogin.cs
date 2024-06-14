@@ -76,5 +76,6 @@ namespace Projeto_GlicNow
         {
             this.Tag = "";
         }
+
     }
 }
